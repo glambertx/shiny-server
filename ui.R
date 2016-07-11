@@ -1,30 +1,31 @@
 library(shiny)
 library(plotly)
-library(dplyr)
 
-#user interface for United Nations Advanced Example
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("Ideal Points"),
-  
-  # Sidebar with a slider input for number of bins
-  
+  titlePanel("Zika Cases"),
   sidebarPanel(
-    h3("Ideal Points Estimation"),
-    # Select Justices name here
-    selectizeInput("name", label = "Country Name(s) of Interest",
-                   choices = unique(ideal$Name), multiple = T,
-                   options = list(maxItems = 5, placeholder = 'Select a name'),
-                   selected = "United States of America"),
-    # Term plot
-    plotOutput("termPlot", height = 200),
-    
-    helpText("Data: Bailey, Michael, Anton  Strezhnev and Erik Voeten. Forthcoming.  âEstimating Dynamic State Preferences from United Nations Voting Data.â Journal of Conflict Resolution. ")
-  ),
   
+    selectizeInput("name",
+                   label = "Select US Teritory or State",
+                   choices = unique(ideal$location),
+                   multiple = T,
+                   options = list(maxItems = 8, placeholder = 'Select a name'),
+                   selected = c("New_York","Florida")),
+    selectizeInput("type",
+                   label = "Select Local or Travel Event",
+                   choices = unique(ideal$data_field),
+                   multiple = T,
+                   options = list(maxItems = 1, placeholder = 'Select an event'),
+                   selected = c("zika_reported_travel")),
+    # Term plot
+    plotOutput("termPlot", height = 50),
+    helpText("Data: ")
+  ),
   # Show a plot of the generated distribution
   mainPanel(
     plotlyOutput("trendPlot")
   )
-))
+)
+)
