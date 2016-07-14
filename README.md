@@ -3,6 +3,7 @@
 Project uses RStudio server, shiny, plotly, and ggplot to build an interactive visualization environment for exploring the time series data of Zika cases.
 
 http://104.131.79.67/shiny/
+http://104.131.79.67/shiny2/
 
 ## Authors
 
