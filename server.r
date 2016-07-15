@@ -1,6 +1,6 @@
 
 library(plotly)
-
+pdf(NULL)
 shinyServer(function(input, output, session) {
   
   output$trendPlot <- renderPlotly({
