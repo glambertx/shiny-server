@@ -6,11 +6,11 @@ Project uses RStudio server, shiny, plotly, and ggplot to build an interactive v
 
 http://138.68.0.218/shiny/
 
-## Authors
+### Authors
 
 * **Greg Lambert**
 
-## Acknowledgments
+### Acknowledgments
 
 * Data from CDC zika repo
 
