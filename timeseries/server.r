@@ -11,7 +11,7 @@ shinyServer(function(input, output, session) {
       df_trend <- ideal[ideal$location == input$name &  ideal$data_field == input$type, ]
       ggplot(df_trend) +
         geom_line(aes(x = report_date, y = value, by = location, color = location))+
-        labs(x = "", y = "Cases", title = "Zika 2016") +
+        labs(x = "", y = "Cases") +
         scale_colour_hue("location", l = 70, c = 150) + ggthemes::theme_few()
     }
     
