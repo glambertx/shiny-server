@@ -1,6 +1,6 @@
 # Shiny server 
 
-Project uses RStudio server, shiny, plotly, and ggplot to build an interactive visualization environment for exploring both time series representation of zika cases and geographical.
+RStudio server, shiny server, plotly, and ggplot are used to build an interactive visualization environment for data exploration.
 
 ### Choropleth and time series interactive visualization of zika cases in U.S states
 
