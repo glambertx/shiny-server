@@ -4,7 +4,6 @@ library(plotly)
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("Zika Cases"),
   sidebarPanel(
   
     selectizeInput("name",
@@ -20,7 +19,7 @@ shinyUI(fluidPage(
                    options = list(maxItems = 1, placeholder = 'Select an event'),
                    selected = c("zika_reported_travel")),
     # Term plot
-    plotOutput("termPlot", height = 30),
+    plotOutput("termPlot"),
     helpText("Data: CDC zika repo (https://github.com/cdcepi/zika)")
   ),
   # Show a plot of the generated distribution

@@ -9,8 +9,6 @@ names(df1) <- c("region","6","5","4","3","2")
 df1 <- df1[c(1,6,5,4,3,2)]
 
 shinyUI(fluidPage(
-  
-  titlePanel("Zika Travel Event (2016)"),
 
   sidebarLayout(
     sidebarPanel(
