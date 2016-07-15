@@ -19,10 +19,7 @@ shinyUI(fluidPage(
                    options = list(maxItems = 1, placeholder = 'Select an event'),
                    selected = c("zika_reported_travel")),
     # Term plot
-    helpText("Data: CDC zika repo (https://github.com/cdcepi/zika)"),
-    plotOutput("termPlot")
-    
-  ),
+    helpText("Data: CDC zika repo (https://github.com/cdcepi/zika)")),
   # Show a plot of the generated distribution
   mainPanel(
     plotlyOutput("trendPlot")
