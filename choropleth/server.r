@@ -5,7 +5,7 @@ library(choroplethr)
 library(choroplethrMaps)
 library(ggplot2)
 library(RColorBrewer)
-  
+pdf(NULL)
 df1 <- read.csv("zika_clean.csv")
 
 
