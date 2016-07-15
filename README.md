@@ -1,6 +1,6 @@
 # Shiny server 
 
-RStudio server, shiny server, plotly, and ggplot are used to build an interactive visualization environment for data exploration.
+A shiny server with plotly and ggplot are used to build an interactive visualization environment for data exploration.
 
 ### Choropleth and time series interactive visualization of zika cases in U.S states
 
